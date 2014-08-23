@@ -1,0 +1,12 @@
+(
+	{
+		Type = FileType;
+		Identifier = "sourcecode.mapcss";
+		BasedOn = sourcecode;
+		Name = "MapCSS file";
+		Extensions = (
+			mapcss,
+		);
+		Language = "xcode.lang.mapcss";
+	},
+)

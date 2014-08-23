@@ -1,0 +1,565 @@
+(
+	{
+		Identifier = "xcode.lang.mapcss.identifier";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_";
+			Words = (
+				"*",
+				node,
+				point,
+				way,
+				line,
+				area,
+				relation,
+				meta,
+				canvas,
+				"@media",
+				"@type",
+				"@values",
+				"@default_value",
+				"@default_other",
+				"@postprocess",
+				"@depend_property",
+				"@import",
+				"@style_element_propery",
+			);
+			Type = "xcode.syntax.keyword";
+			AltType = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.operators";
+		Syntax = {
+			Words = (
+				",",
+				".",
+				":",
+				"::",
+				"|",
+				"=",
+				"!=",
+				"<",
+				">",
+				"<=",
+				">=",
+				"^=",
+				"$=",
+				"*=",
+				"~=",
+				"=~",
+				"!~",
+				"@=",
+				"\U2208",
+				"\U220b",
+				"\U29c9",
+				near,
+				within,
+				surrounds,
+				overlaps,
+				and,
+				"===",
+				"<>",
+				eq,
+				"==",
+				";",
+				"&&",
+				"||",
+				"?",
+			);
+			Type = "xcode.syntax.plain";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.colornames";
+		Syntax = {
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			Words = (
+				aliceblue,
+				antiquewhite,
+				aqua,
+				aquamarine,
+				azure,
+				beige,
+				bisque,
+				black,
+				blanchedalmond,
+				blue,
+				blueviolet,
+				brown,
+				burlywood,
+				cadetblue,
+				chartreuse,
+				chocolate,
+				coral,
+				cornflowerblue,
+				cornsilk,
+				crimson,
+				cyan,
+				darkblue,
+				darkcyan,
+				darkgoldenrod,
+				darkgray,
+				darkgreen,
+				darkgrey,
+				darkkhaki,
+				darkmagenta,
+				darkolivegreen,
+				darkorange,
+				darkorchid,
+				darkred,
+				darksalmon,
+				darkseagreen,
+				darkslateblue,
+				darkslategray,
+				darkslategrey,
+				darkturquoise,
+				darkviolet,
+				deeppink,
+				deepskyblue,
+				dimgray,
+				dimgrey,
+				dodgerblue,
+				firebrick,
+				floralwhite,
+				forestgreen,
+				fuchsia,
+				gainsboro,
+				ghostwhite,
+				gold,
+				goldenrod,
+				gray,
+				green,
+				greenyellow,
+				grey,
+				honeydew,
+				hotpink,
+				indianred,
+				indigo,
+				ivory,
+				khaki,
+				lavender,
+				lavenderblush,
+				lawngreen,
+				lemonchiffon,
+				lightblue,
+				lightcoral,
+				lightcyan,
+				lightgoldenrodyellow,
+				lightgray,
+				lightgreen,
+				lightgrey,
+				lightpink,
+				lightsalmon,
+				lightseagreen,
+				lightskyblue,
+				lightslategray,
+				lightslategrey,
+				lightsteelblue,
+				lightyellow,
+				lime,
+				limegreen,
+				linen,
+				magenta,
+				maroon,
+				mediumaquamarine,
+				mediumblue,
+				mediumorchid,
+				mediumpurple,
+				mediumseagreen,
+				mediumslateblue,
+				mediumspringgreen,
+				mediumturquoise,
+				mediumvioletred,
+				midnightblue,
+				mintcream,
+				mistyrose,
+				moccasin,
+				navajowhite,
+				navy,
+				oldlace,
+				olive,
+				olivedrab,
+				orange,
+				orangered,
+				orchid,
+				palegoldenrod,
+				palegreen,
+				paleturquoise,
+				palevioletred,
+				papayawhip,
+				peachpuff,
+				peru,
+				pink,
+				plum,
+				powderblue,
+				purple,
+				red,
+				rosybrown,
+				royalblue,
+				saddlebrown,
+				salmon,
+				sandybrown,
+				seagreen,
+				seashell,
+				sienna,
+				silver,
+				skyblue,
+				slateblue,
+				slategray,
+				slategrey,
+				snow,
+				springgreen,
+				steelblue,
+				tan,
+				teal,
+				thistle,
+				tomato,
+				turquoise,
+				violet,
+				wheat,
+				white,
+				whitesmoke,
+				yellow,
+				yellowgreen,
+			);
+			Type = "xcode.syntax.number";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.hexcolor";
+		Syntax = {
+			StartChars = "#";
+			Chars = "0123456789abcdefABCDEF";
+			Match = (
+				"^#[0-9a-fA-F][0-9a-fA-F]([0-9a-fA-F][0-9a-fA-F][0-9a-fA-F][0-9a-fA-F])?$",
+			);
+			Type = "xcode.syntax.number";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.boolean";
+		Syntax = {
+			Words = (
+				yes,
+				YES,
+				no,
+				NO,
+				true,
+				TRUE,
+				false,
+				FALSE,
+				on,
+				ON,
+				off,
+				OFF,
+			);
+			Type = "xcode.syntax.number";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.properties";
+		Syntax = {
+			Words = (
+				set,
+				unset,
+				antialiasing,
+				"fill-color",
+				"fill-opacity",
+				"fill-image",
+				"z-index",
+				width,
+				color,
+				opacity,
+				dashes,
+				image,
+				linecap,
+				linejoin,
+				"casing-width",
+				"casing-color",
+				"casing-opacity",
+				"casing-dashes",
+				"casing-linecap",
+				"casing-linejoin",
+				"left-casing-width",
+				"left-casing-color",
+				"left-casing-opacity",
+				"left-casing-dashes",
+				"left-casing-linecap",
+				"left-casing-linejoin",
+				"right-casing-width",
+				"right-casing-color",
+				"right-casing-opacity",
+				"right-casing-dashes",
+				"right-casing-linecap",
+				"right-casing-linejoin",
+				extrude,
+				"extrude-edge-color",
+				"extrude-edge-opacity",
+				"extrude-face-color",
+				"extrude-face-opacity",
+				"icon-image",
+				"icon-width",
+				"icon-height",
+				"icon-opacity",
+				"font-family",
+				"font-size",
+				"font-weight",
+				"font-style",
+				"font-variant",
+				"text-decoration",
+				"text-transform",
+				"text-opacity",
+				"text-offset",
+				"text-offset-x",
+				"text-offset-y",
+				"max-width",
+				text,
+				"text-halo-color",
+				"text-halo-radius",
+				"shield-color",
+				"shield-opacity",
+				"shield-frame-color",
+				"shield-frame-width",
+				"shield-casing-color",
+				"shield-casing-width",
+				"shield-text",
+				"shield-image",
+				"shield-shape",
+				"user-agent",
+				"major-z-index",
+				"object-z-index",
+				modifier,
+				"symbol-shape",
+				"symbol-size",
+				"symbol-stroke-width",
+				"symbol-stroke-opacity",
+				"symbol-fill-color",
+				"symbol-fill-opacity",
+				"text-anchor-horizontal",
+				"text-anchor-vertical",
+				"dashes-offset",
+				miterlimit,
+				offset,
+				"text-position",
+				"repeat-image",
+				"repeat-image-width",
+				"repeat-image-height",
+				"repeat-image-align",
+				"repeat-image-offset",
+				"repeat-image-spacing",
+				"repeat-image-phase",
+				"text-position",
+				"text-halo-opacity",
+				role,
+				index,
+			);
+			Type = "xcode.syntax.plain";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.eval";
+		Syntax = {
+			Words = (
+				eval,
+				rgb,
+				rgba,
+				"hsb_color",
+				cond,
+				list,
+				get,
+				split,
+				prop,
+				"is_prop_set",
+				tag,
+				"parent_tag",
+				"has_tag_key",
+				red,
+				green,
+				blue,
+				alpha,
+				length,
+				count,
+				any,
+				concat,
+				join,
+				tr,
+				"regexp_test",
+				"regexp_match",
+				substring,
+				replace,
+				"osm_id",
+				"URL_encode",
+				"XML_encode",
+				"CRC32_checksum",
+				"is_right_hand_traffic",
+				"number_of_tags",
+				print,
+				println,
+				"parent_id",
+				"parent_geo",
+				"link_tag",
+				boolean,
+				switch,
+				str,
+				int,
+				num,
+				debug,
+				"keys_of_tags",
+				"style_id",
+				zoom,
+				"scale_denominator",
+				viewport,
+				sqrt,
+				power,
+				log,
+				exp,
+				min,
+				max,
+				metric,
+				zmetric,
+				round,
+				signum,
+				floor,
+				ceil,
+				sin,
+				cos,
+				tan,
+				asin,
+				acos,
+				atan,
+				atan2,
+				sinh,
+				cosh,
+				tanh,
+				random,
+				contains,
+				search,
+				max,
+				min,
+				unique,
+				sort,
+				natsort,
+				reverse,
+				range,
+				deluma,
+				lighten,
+				hsv,
+			);
+			Type = "xcode.syntax.keyword";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.pseudoclass";
+		Syntax = {
+			Words = (
+				active,
+				hover,
+				closed,
+				unconnected,
+				connection,
+				tagged,
+				righthandtraffic,
+				lefthandtraffic,
+			);
+			Type = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss";
+		Description = "MapCSS Coloring";
+		BasedOn = "xcode.lang.simpleColoring";
+		IncludeInMenu = YES;
+		Name = MapCSS;
+		Syntax = {
+			Tokenizer = "xcode.lang.mapcss.lexer.toplevel";
+			IncludeRules = (
+				"xcode.lang.mapcss.bracketexpr",
+			);
+			Type = "xcode.syntax.plain";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.lexer";
+		Syntax = {
+			IncludeRules = (
+				"xcode.lang.mapcss.comment",
+				"xcode.lang.mapcss.comment.singleline",
+				"xcode.lang.string",
+				"xcode.lang.string.mapcss0",
+				"xcode.lang.string.mapcss1",
+				"xcode.lang.character",
+				"xcode.lang.mapcss.identifier",
+				"xcode.lang.number",
+				"xcode.lang.mapcss.operators",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.lexer.toplevel";
+		Syntax = {
+			IncludeRules = (
+				"xcode.lang.mapcss.comment",
+				"xcode.lang.mapcss.comment.singleline",
+				"xcode.lang.string",
+				"xcode.lang.string.mapcss0",
+				"xcode.lang.string.mapcss1",
+				"xcode.lang.character",
+				"xcode.lang.number",
+			);
+		};
+	},
+	{
+		Identifier = "xcode.lang.string.mapcss0";
+		Syntax = {
+			Start = "\"";
+			End = "\"";
+			Type = "xcode.syntax.string";
+		};
+	},
+	{
+		Identifier = "xcode.lang.string.mapcss1";
+		Syntax = {
+			Start = "'";
+			End = "'";
+			Type = "xcode.syntax.string";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.bracketexpr";
+		Syntax = {
+			Tokenizer = "xcode.lang.mapcss.lexer";
+			Start = "[";
+			End = "]";
+			Recursive = YES;
+			IncludeRules = ();
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.comment";
+		Syntax = {
+			Start = "/*";
+			End = "*/";
+			Foldable = YES;
+			IncludeRules = (
+				"xcode.lang.url",
+				"xcode.lang.url.mail",
+				"xcode.lang.comment.mark",
+			);
+			Type = "xcode.syntax.comment";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.comment.singleline";
+		Syntax = {
+			Start = "//";
+			End = "\n";
+			IncludeRules = (
+				"xcode.lang.url",
+				"xcode.lang.url.mail",
+				"xcode.lang.comment.mark",
+			);
+			Type = "xcode.syntax.comment";
+		};
+	},
+)
