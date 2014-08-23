@@ -61,6 +61,7 @@
 				"===",
 				"<>",
 				eq,
+				ne,
 				"==",
 				";",
 				"&&",
@@ -353,6 +354,17 @@
 				"text-halo-opacity",
 				role,
 				index,
+				throwWarning,
+				author,
+				title,
+				description,
+				version,
+				suggestAlternative,
+				fixRemove,
+				throwOther,
+				fixAdd,
+				fixChangeKey,
+				throwError,
 			);
 			Type = "xcode.syntax.plain";
 		};
@@ -452,6 +464,10 @@
 	{
 		Identifier = "xcode.lang.mapcss.pseudoclass";
 		Syntax = {
+			Tokenizer = "xcode.syntax.lexer";
+			Rules = (
+				":?",
+			);
 			Words = (
 				active,
 				hover,
@@ -463,6 +479,15 @@
 				lefthandtraffic,
 			);
 			Type = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.pseudoelement";
+		Syntax = {
+			Tokenizer = "xcode.lang.mapcss.lexer";
+			Rules = (
+				"::?",
+			);
 		};
 	},
 	{
@@ -526,6 +551,14 @@
 		};
 	},
 	{
+		Identifier = "xcode.lang.string.mapcss2";
+		Syntax = {
+			Start = "/";
+			End = "/";
+			Type = "xcode.syntax.string";
+		};
+	},
+	{
 		Identifier = "xcode.lang.mapcss.bracketexpr";
 		Syntax = {
 			Tokenizer = "xcode.lang.mapcss.lexer";
@@ -560,6 +593,16 @@
 				"xcode.lang.comment.mark",
 			);
 			Type = "xcode.syntax.comment";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.block";
+		Syntax = {
+			Tokenizer = "xcode.lang.mapcss.lexer";
+			Start = "{";
+			End = "}";
+			Foldable = YES;
+			Recursive = YES;
 		};
 	},
 )
