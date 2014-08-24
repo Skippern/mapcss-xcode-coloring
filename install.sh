@@ -53,7 +53,7 @@ cat >AdditionalLanguages.plist <<EOF
 		<key>version</key>
 		<string>1.0</string>
 		<key>documentationAbbreviation</key>
-		<string>r</string>				
+		<string>mapcss</string>
 		<key>conformsTo</key>
 		<array>
 			<dict>
@@ -62,7 +62,7 @@ cat >AdditionalLanguages.plist <<EOF
 			</dict>
 		</array>
 		<key>name</key>
-		<string>R Language</string>
+		<string>MapCSS Language</string>
 	</dict>
 </dict>
 </plist>
