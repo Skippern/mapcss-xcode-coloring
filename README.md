@@ -1,11 +1,12 @@
 MapCSS Syntax Coloring
 ===================
 
-Attempt at MapCSS syntax support for Xcode 6
+Attempt at MapCSS syntax support for Xcode 6:
+* reverse engineering *.xclangspec files in the Xcode.app resource tree
 
 Based on the work of:
 * Tiago Bastos (lua-xcode-coloring)
-* Alex Karahalios (Install Script)
+* Alex Karahalios (r-xcode-coloring & Install Script)
 
 MapCSS
 ===================

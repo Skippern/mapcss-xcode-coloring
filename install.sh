@@ -49,7 +49,7 @@ cat >AdditionalLanguages.plist <<EOF
 		<key>point</key>
 		<string>Xcode.SourceCodeLanguage</string>
 		<key>languageName</key>
-		<string>R</string>
+		<string>MapCSS</string>
 		<key>version</key>
 		<string>1.0</string>
 		<key>documentationAbbreviation</key>
