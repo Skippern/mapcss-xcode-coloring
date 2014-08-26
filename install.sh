@@ -9,7 +9,7 @@ set -e
 # Assumes Xcode 4+.
 XCODE_MAJOR_VERSION=`xcodebuild -version | awk 'NR == 1 {print substr($2,1,1)}'`
 if [ "$XCODE_MAJOR_VERSION" -lt "4" ]; then
-        echo "Xcode 4.x not found."
+        echo "Xcode 4.x or higher not found."
         exit 1
 fi
 
