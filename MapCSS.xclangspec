@@ -235,7 +235,7 @@
 			Rules = (
 				"xcode.lang.mapcss.style.name",
 			);
-			Type = "xcode.syntax.definition.function";
+			Type = "xcode.syntax.method.declarator";
 		};
 	},
 	{
@@ -243,10 +243,7 @@
 		Syntax = {
 			Tokenizer = "xcode.lang.mapcss.lexer";
 			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!/.*\"";
-			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!/.*\"_-'~?^><=";
-			Match = (
-				"*",
-			);
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!/.*\"_-'~?^><=()|\\;:";
 			Type = "xcode.syntax.entity";
 		};
 	},
