@@ -15,6 +15,7 @@ Works with:
 
 * Xcode 4
 * Xcode 5
+* Xcode 6
 
 MapCSS
 ===================
@@ -35,4 +36,4 @@ Other Documentation
 Xcode 6
 ===================
 
-This doesn't seem to work properly in **Xcode 6**, somehow Xcode 6 doesn't accept the precense of the file in the directory apointed by the script, which result in the hilighting not being loaded. There must be some other file that need to be edited (adding a line in a menu list or something). This will need to be investigated further.
+Changes in the install script have been made in order to work with Xcode 6. The reason is that the cache file name had been changed as well as a few syntax differences in *DVTFoundation.xcplugindata*. The changes should not affext Xcode 4 & 5, though I have not been able to specifically test this.

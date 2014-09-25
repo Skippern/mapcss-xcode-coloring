@@ -41,7 +41,7 @@ cat >AdditionalLanguages.plist <<EOF
 		<array>
 			<dict>
 				<key>identifier</key>
-				<string>com.apple.xcode.mapcss-source</string>
+				<string>public.mapcss</string>
 			</dict>
 		</array>
 		<key>id</key>
@@ -54,6 +54,19 @@ cat >AdditionalLanguages.plist <<EOF
 		<string>1.0</string>
 		<key>documentationAbbreviation</key>
 		<string>mapcss</string>
+        <key>commentSyntax</key>
+        <array>
+            <dict>
+                <key>prefix</key>
+                <string>/*</string>
+                <key>suffix</key>
+                <string>*/</string>
+            </dict>
+            <dict>
+                <key>prefix</key>
+                <string>//</string>
+            </dict>
+        </array>
 		<key>conformsTo</key>
 		<array>
 			<dict>
@@ -81,6 +94,6 @@ rm -f AdditionalLanguages.plist
 cp "$SCRIPT_PATH/MapCSS.xclangspec" "$DVTFOUNDATION_PATH"
 
 # Remove any cached Xcode plugins
-rm -rf /private/var/folders/*/*/*/com.apple.DeveloperTools/*/Xcode/PlugInCache.xcplugincache
+rm -rf /private/var/folders/*/*/*/com.apple.DeveloperTools/*/Xcode/PlugInCache*.xcplugincache
 
 echo "Syntax coloring must be manually selected from the Editor - Syntax Coloring menu in Xcode."
