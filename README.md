@@ -10,6 +10,12 @@ Based on the work of:
 
 For now the coloring loads, but it doesnt autodetect the files, so you have to select the coloring from "*Editor > Syntac Coloring > MapCSS*" menu
 
+Works with:
+===================
+
+* Xcode 4
+* Xcode 5
+
 MapCSS
 ===================
 
@@ -26,3 +32,7 @@ Other Documentation
 * [pgmapcss implementation](https://github.com/plepe/pgmapcss/blob/master/doc/MapCSS.creole)
 
 
+Xcode 6
+===================
+
+This doesn't seem to work properly in **Xcode 6**, somehow Xcode 6 doesn't accept the precense of the file in the directory apointed by the script, which result in the hilighting not being loaded. There must be some other file that need to be edited (adding a line in a menu list or something). This will need to be investigated further.
