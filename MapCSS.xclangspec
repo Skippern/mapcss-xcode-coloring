@@ -23,6 +23,17 @@
 				"@depend_property",
 				"@import",
 				"@style_element_propery",
+			);
+			Type = "xcode.syntax.keyword";
+			AltType = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.colorword";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			Words = (
 				aliceblue,
 				antiquewhite,
 				aqua,
@@ -171,7 +182,167 @@
 				yellow,
 				yellowgreen,
 			);
-			Type = "xcode.syntax.keyword";
+			Type = "xcode.syntax.number";
+			AltType = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.styles";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-";
+			Words = (
+				set,
+				text,
+				opacity,
+				color,
+				antialiasing,
+				"fill-color",
+				"fill-opacity",
+				"fill-image",
+				"z-index",
+				"major-z-index",
+				"object-z-index",
+				modifier,
+				width,
+				dashes,
+				"dashes-offset",
+				"dashes-background-color",
+				"dashes-background-opacity",
+				image,
+				linecap,
+				linejoin,
+				"casing-width",
+				"casing-color",
+				"casing-opacity",
+				"casing-dashes",
+				"casing-linecap",
+				"casing-linejoin",
+				"left-casing-width",
+				"left-casing-color",
+				"left-casing-opacity",
+				"left-casing-dashes",
+				"left-casing-linecap",
+				"left-casing-linejoin",
+				"right-casing-width",
+				"right-casing-color",
+				"right-casing-opacity",
+				"right-casing-dashes",
+				"right-casing-linecap",
+				"right-casing-linejoin",
+				extrude,
+				"extrude-edge-color",
+				"extrude-edge-opacity",
+				"extrude-face-color",
+				"extrude-face-opacity",
+				"icon-image",
+				"icon-width",
+				"icon-height",
+				"icon-opacity",
+				"font-family",
+				"font-size",
+				"font-weight",
+				"font-style",
+				"font-variant",
+				"text-decoration",
+				"text-transform",
+				"text-color",
+				"text-opacity",
+				"text-offset",
+				"text-position",
+				"max-width",
+				text,
+				"text-halo-color",
+				"text-halo-radius",
+				"shield-color",
+				"shield-opacity",
+				"shield-frame-color",
+				"shield-frame-width",
+				"shield-casing-color",
+				"shield-casing-width",
+				"shield-text",
+				"shield-image",
+				"shield-shape",
+				"symbol-shape",
+				"symbol-size",
+				"symbol-stroke-width",
+				"symbol-stroke-color",
+				"symbol-stroke-opacity",
+				"symbol-fill-color",
+				"symbol-fill-opacity",
+				"text-anchor-horizontal",
+				"text-anchor-vertical",
+				offset,
+				"repeat-image",
+				"repeat-image-width",
+				"repeat-image-height",
+				"repeat-image-align",
+				"repeat-image-offset",
+				"repeat-image-spacing",
+				"repeat-image-phase",
+				"user-agent",
+				renderer,
+				"renderer-version",
+				"min-renderer-version",
+				"max-renderer-version",
+				"pgmapcss-version",
+				"min-pgmapcss-version",
+				"max-pgmapcss-version",
+				"josm-version",
+				"min-josm-version",
+				"max-josm-version",
+			);
+			Type = "xcode.syntax.definition.class";
+			AltType = "xcode.syntax.identifier";
+		};
+	},
+	{
+		Identifier = "xcode.lang.mapcss.values";
+		Syntax = {
+			StartChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			Chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-";
+			Words = (
+				pgmapcss,
+				josm,
+				bold,
+				normal,
+				italic,
+				"small-caps",
+				none,
+				underline,
+				uppercase,
+				lowercase,
+				capitalize,
+				auto,
+				rounded,
+				rectangular,
+				true,
+				false,
+				yes,
+				no,
+				square,
+				round,
+				miter,
+				bevel,
+				circle,
+				triangle,
+				pentagon,
+				hexagon,
+				heptagon,
+				octogon,
+				nonagon,
+				decagon,
+				left,
+				right,
+				center,
+				above,
+				top,
+				bottom,
+				below,
+				default,
+				thinnest,
+			);
+			Type = "xcode.syntax.identifier.constant";
 			AltType = "xcode.syntax.identifier";
 		};
 	},
@@ -223,6 +394,9 @@
 				"xcode.lang.mapcss.hexcolor",
 				"xcode.lang.mapcss.number",
 				"xcode.lang.mapcss.identifier",
+				"xcode.lang.mapcss.colorword",
+				"xcode.lang.mapcss.styles",
+				"xcode.lang.mapcss.values",
 			);
 		};
 	},
