@@ -5,7 +5,7 @@ Attempt at MapCSS syntax support for Xcode 6:
 * reverse engineering *.xclangspec files in the Xcode.app resource tree
 
 Based on the work of:
-* Tiago Bastos (lua-xcode-coloring)
+* Tiago Bastos ([lua-xcode-coloring](https://github.com/bastos/lua-xcode-coloring))
 * Alex Karahalios (r-xcode-coloring & Install Script)
 
 For now the coloring loads, but it doesnt autodetect the files, so you have to select the coloring from "*Editor > Syntac Coloring > MapCSS*" menu
